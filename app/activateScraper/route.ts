@@ -26,7 +26,7 @@ export async function POST(req: Request) {
     console.log("data");
 
     const { collection_id, start_eta } = data;
-
+      //TO-DO try to sign  brightdata cheapest plan
     await adminDb.collection("searches").doc(collection_id).set({
       search,
       start_eta,
